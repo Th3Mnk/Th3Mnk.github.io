@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/*navbar*/
+
+                        /* Style the top navigation bar */
+                        .topnav {
+                        overflow: hidden;
+                        background-color: #ffffff;
+                        }
+                        /* Style the topnav links */
+                        .topnav a {
+                        background-color: white;
+                        display: block;
+                        color: blue;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        float:right;
+                        }
+                        /* Change color on hover */
+                        .topnav a:hover {
+                        background-color: orange;
+                        }
+                        
+                        h3 {
+    font-size:25px;
+}
+                        </style>
+</head>
+<body>
+<nav>
+<div class="topnav">
+                       <a href="resources.html">                
+                        <h3>
+                        | Resources |</h3>
+                     </a>
+                     <a href="https://success.overturemarket.com">
+                        <h3>
+                        | Store |</h3>
+                     </a>
+                     <a href="drills.html">
+                        <h3>| Drills |</h3>
+                     </a>
+                     <a href="team.html">
+                        <h3>| The Team |</h3>
+                     </a>
+                     <img src="https://tbncdn.freelogodesign.org/59ef53d6-0380-43c8-96e1-c8267fc11b32.png?1553306171711" height=200px width=200px>
+                     <a href="about.html">
+                        <h3>| About |</h3>
+                     </a>
+                     <a href="contact.html">
+                        <h3>| Contact |</h3>
+                     </a>
+                     <a href="schedule.html">
+                        <h3>| Schedule |</u></h3>
+                     </a>
+                     <a href="index.html">
+                        <h3>| Home |</h3>
+                     </a>
+                     
+                     </div>
+                     </nav>
+
+<p><h1 style="text-align:center; color:orange;" class="panel"></h1></p>
+
+	<ul>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	    <li><a href=""></a></li>
+	</ul>
+	<p>Information from <a href="https://www.capitoldebate.com/about-our-summer-camps/">Capitol Debate</a></p>
+</div>
+
+<hr>
+<p><h1 style="text-align:center; color:orange;" class="accordian">Top debate highschools</h1></p>
+    <p>Top highschools at debate according to <a href="https://www.speechanddebate.org/rankings/">Speech and Debate</a></p>
+    <ol>
+        <li><a href="">Regis Highschool</a></li>
+        <li><a href="">Chaminade Highschool</a></li>
+        <li><a href="">Syosset Highschool</a></li>
+        <li><a href="">Scarsdale Highschool</a></li>
+        <li><a href="">The Bronx Highschool of Science</a></li>
+        <li><a href="">Jericho Highschool</a></li>
+        <li><a href="">Xaverian Highschool<a></li>
+        <li><a href="">Edgemont Highschool</a></li>
+        <li><a href="">Poly Prep Country Day School</a></li>
+    </ol>
+  </div>
+<hr>
+<h1 style="color:orange; text-align:center;" class="accordion">Stuff to do</h1>
+
+  <div id="myDIV" class="header">
+  <input type="text" id="myInput" placeholder="Do Something...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Write Rebuttal overviews and extentions</li>
+  <li>Review evidence</li>
+  <li>Develop 1NCs to specific affs</li>
+  <li>Watch or read news articles</li>
+  <li>Review opponnent evidence and analytics for flaws or contradictions</li>
+  <li>Make warrant maps</li>
+  <li>Do your homework</li>
+  <li>Email your Coach to see if there's more you can do</li>
+</ul>
+
+<p>If you truly have done all of this, congratulations, I'm impressed. Go eat candy champ. +10 respect</p>
+
+<script>
+// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  myNodelist[i].appendChild(span);
+}
+
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
+  }
+}
+
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("myInput").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+  if (inputValue === '') {
+    alert("You must write something!");
+  } else {
+    document.getElementById("myUL").appendChild(li);
+  }
+  document.getElementById("myInput").value = "";
+
+  var span = document.createElement("SPAN");
+  var txt = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(txt);
+  li.appendChild(span);
+
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+}
+</script>
+<hr>
+<p><h1 style="text-align:center; color:orange" class="accordian">Evidence</h1></p>
+	<p><a>2017-2018-Education</a></p>
+	<p><a>2018-2019-Immigration</a></p>
+	<p><a href="https://discordapp.com/channels/569934252171460638/569934252171460640">Discord</a></p>
+
+</script>
+<hr>
+<!-- footer-->
+</body>
+</html>
