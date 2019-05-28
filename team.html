@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            * {
+              box-sizing: border-box;
+            }
+
+
+            h2 {
+              padding-left: 8px;
+            }
+
+        
+
+        /* Style the navigation menu inside the left column */
+            p {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                text-align:center
+            }
+
+            li p {
+                padding: 12px;
+                text-decoration: none;
+                color: black;
+                display: block
+            }
+
+            li p:hover {
+                background-color: #eee;
+            }
+            
+            p{
+              background-color:;  
+            }
+            
+            <!--navigation-bar-->
+                        /* Style the top navigation bar */
+                        .topnav {
+                        overflow: hidden;
+                        background-color: #ffffff;
+                        }
+                        /* Style the topnav links */
+                        .topnav a {
+                        background-color: white;
+                        display: block;
+                        color: blue;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        float:right;
+                        }
+                        /* Change color on hover */
+                        .topnav a:hover {
+                        background-color: orange;
+                        }
+                        h3 {
+    font-size:25px;
+}
+            /*search menu*/
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+a {
+    text-decoration:none;
+    color:black;
+}
+
+        </style>
+    </head>
+    <body>
+        <!--navbar-->
+            
+            <nav>
+<div class="topnav">
+                       <a href="resources.html">                
+                        <h3>
+                        | Resources |</h3>
+                     </a>
+                     <a href="https://success.overturemarket.com">
+                        <h3>
+                        | Store |</h3>
+                     </a>
+                     <a href="drills.html">
+                        <h3>| Drills |</h3>
+                     </a>
+                     <a href="team.html">
+                        <h3>| The Team |</h3>
+                     </a>
+                     <img src="https://tbncdn.freelogodesign.org/59ef53d6-0380-43c8-96e1-c8267fc11b32.png?1553306171711" height=200px width=200px>
+                     <a href="about.html">
+                        <h3>| About |</h3>
+                     </a>
+                     <a href="contact.html">
+                        <h3>| Contact |</h3>
+                     </a>
+                     <a href="schedule.html">
+                        <h3>| Schedule |</u></h3>
+                     </a>
+                     <a href="index.html">
+                        <h3>| Home |</h3>
+                     </a>
+                     
+                     </div>
+                     </nav>
+                     
+        <!-- search bar-->
+            
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:15%;">Name</th>
+    <th style="width:15%">Division/grade</th>
+    <th style="width:70%;">About me</th>
+  </tr>
+ <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+<td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr><tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a></a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+                    
+
+    </body>
+</html>
