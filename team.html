@@ -1,393 +1,348 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SAMW_Debate | Meet the Team</title>
+      <style>
+         body {
+         font-family: Arial, Helvetica, sans-serif;
+         }
+         * {
+         box-sizing: border-box;
+         }
+         h2 {
+         padding-left: 8px;
+         }
+         .topnav h3 {
+         font-size:20px;
+         }
+         /* Style the navigation menu inside the left column */
+         p {
+         list-style-type: none;
+         padding: 0;
+         margin: 0;
+         text-align:center
+         }
+         li p {
+         padding: 12px;
+         text-decoration: none;
+         color: black;
+         display: block
+         }
+         li p:hover {
+         background-color: #eee;
+         }
+         p{
+         background-color:;  
+         }
+         <!--navigation-bar-->
+         /* Style the top navigation bar */
+         .topnav {
+         overflow: hidden;
+         background-color: #ffffff;
+         }
+         /* Style the topnav links */
+         .topnav a {
+         background-color: white;
+         display: block;
+         color: blue;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         float:right;
+         }
+         /* Change color on hover */
+         .topnav a:hover {
+         background-color: orange;
+         }
+         /*search menu*/
+         * {
+         box-sizing: border-box;
+         }
+         #myInput {
+         background-image: url('/css/searchicon.png');
+         background-position: 10px 10px;
+         background-repeat: no-repeat;
+         width: 100%;
+         font-size: 16px;
+         padding: 12px 20px 12px 40px;
+         border: 1px solid #ddd;
+         margin-bottom: 12px;
+         }
+         #myTable {
+         border-collapse: collapse;
+         width: 100%;
+         border: 1px solid #ddd;
+         font-size: 18px;
+         }
+         #myTable th, #myTable td {
+         text-align: left;
+         padding: 12px;
+         }
+         #myTable tr {
+         border-bottom: 1px solid #ddd;
+         }
+         #myTable tr.header, #myTable tr:hover {
+         background-color: #f1f1f1;
+         }
+         a {
+         text-decoration:none;
+         color:black;
+         }
+         /*footer*/
+         tabcontent a {
+         text-decoration:none;
+         color:black;
+         }
+         body {font-family: Arial;}
+         /* Style the tab */
+         .tab {
+         overflow: hidden;
+         border: 1px solid #ccc;
+         background-color: #f1f1f1;
+         }
+         /* Style the buttons inside the tab */
+         .tab button {
+         background-color: inherit;
+         float: left;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         padding: 14px 16px;
+         transition: 0.3s;
+         font-size: 17px;
+         }
+         /* Change background color of buttons on hover */
+         .tab button:hover {
+         background-color: #ddd;
+         }
+         /* Create an active/current tablink class */
+         .tab button.active {
+         background-color: #ccc;
+         }
+         /* Style the tab content */
+         .tabcontent {
+         display: none;
+         padding: 6px 12px;
+         border: 1px solid #ccc;
+         border-top: none;
+         }
+      </style>
+   </head>
+   <body>
+      <!--navbar-->
+      <nav>
+         <div class="topnav">
+            <a href="resources.html">
+               <h3>
+                  | Resources |
+               </h3>
+            </a>
+            <a href="https://success.overturemarket.com">
+               <h3>
+                  | Store |
+               </h3>
+            </a>
+            <a href="drills.html">
+               <h3>| Drills |</h3>
+            </a>
+            <a href="team.html">
+               <h3>| The Team |</h3>
+            </a>
+            <img src="https://tbncdn.freelogodesign.org/59ef53d6-0380-43c8-96e1-c8267fc11b32.png?1553306171711" height=200px width=200px>
+            <a href="about.html">
+               <h3>| About |</h3>
+            </a>
+            <a href="contact.html">
+               <h3>| Contact |</h3>
+            </a>
+            <a href="schedule.html">
+               <h3>| Schedule |</u></h3>
+            </a>
+            <a href="index.html">
+               <h3>| Home |</h3>
+            </a>
+         </div>
+      </nav>
+      <!-- search bar-->
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+      <table id="myTable">
+         <tr class="header">
+            <th style="width:15%;">Name</th>
+            <th style="width:15%">Division/grade</th>
+            <th style="width:70%;">About me</th>
+         </tr>
+         <tr>
+            <td><a>Jesus Raul Cepin</a></td>
+            <td>Coach</td>
+            <td>I’m a Speech and Debate Coach who l</td>
+         </tr>
+         <tr>
+            <td><a>Sofiya Andreyeva</a></td>
+            <td>Coach</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Thelonius Lucien</a></td>
+            <td>8th grade</td>
+            <td>I am an animal lover who seeks to find his passion in zoology. And debate I will gain scholarships becoming key to my growth as a debator.</td>
+         </tr>
+         <tr>
+            <td><a>Rachel Bochman</a></td>
+            <td>8th grade</td>
+            <td>Not applicable</td>
+         </tr>
+         <tr>
+            <td><a>Jude Yang</a></td>
+            <td>5th grade</td>
+            <td>An alien that eats whales</td>
+         </tr>
+         <tr>
+            <td><a>Nicholas Hayward</a></td>
+            <td>5th grade</td>
+            <td> I am the Lasagna Theif</td>
+         </tr>
+         <tr>
+            <td><a>Amelia Petry</a></td>
+            <td>7th grade</td>
+            <td>I am an Open Debater in 7th grade.</td>
+         </tr>
+         <tr>
+            <td><a>Kassandra Jazmin Sinchi</a></td>
+            <td>5th grade</td>
+            <td>I am a dog that likes to eat dog treats!!!</td>
+         </tr>
+         <tr>
+            <td><a>Indigo Felix</a></td>
+            <td>5th grade</td>
+            <td>IndigoPanda gaming, youtuber and debater I will debate on my deathbed</td>
+         </tr>
+         <tr>
+            <td><a>Jay Vazquez</a></td>
+            <td>6th grade</td>
+            <td>I AM JAY VAZQUEZ!!!!!!!!!!</td>
+         </tr>
+         <tr>
+            <td><a>Axel Pedersen of Baxel</a></td>
+            <td>6th grade</td>
+            <td>I am the most ageist one against 5th graders. Fused with Baran to become Baxel Pedowneysen makes a unstoppable force of annoyance</td>
+         </tr>
+         <tr>
+            <td><a>Tanaya Shah</a></td>
+            <td>5th grade</td>
+            <td>An optimistic, quick thinking girl/A talkative and optimistic person.</td>
+         </tr>
+         <tr>
+            <td><a>Yosairee Orozco</a></td>
+            <td>5th grade</td>
+            <td>I am a female kid who does policy debate</td>
+         </tr>
+         <tr>
+            <td><a>Athos Cespedes</a></td>
+            <td>5th grade</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Baran Downey of Baxel</a></td>
+            <td>6th grade</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Marie Fall</a></td>
+            <td>8th grade</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Katherine "Katie" Hayward</a></td>
+            <td>8th grade</td>
+            <td>A person</td>
+         </tr>
+         <tr>
+            <td><a>Alexander "Lex" Lopez</a></td>
+            <td>8th grade</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Ean Kyle Tolbert</a></td>
+            <td>8th grade</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Henrik "Hank" Tully</a></td>
+            <td>5th grade</td>
+            <td></td>
+         </tr>
+         <tr>
+            <td><a>Shiloh Williams</a></td>
+            <td>7th grade</td>
+            <td>I am shiloh Williams, a sixth grader at MW who debates as a super fun hobby. It has taught me to speak up for myself</td>
+         </tr>
+         <tr>
+            <td><a>Yewon Yang</a></td>
+            <td>8th grade</td>
+            <td></td>
+         </tr>
+      </table>
+      <script>
+         function myFunction() {
+           var input, filter, table, tr, td, i, txtValue;
+           input = document.getElementById("myInput");
+           filter = input.value.toUpperCase();
+           table = document.getElementById("myTable");
+           tr = table.getElementsByTagName("tr");
+           for (i = 0; i < tr.length; i++) {
+             td = tr[i].getElementsByTagName("td")[0];
+             if (td) {
+               txtValue = td.textContent || td.innerText;
+               if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                 tr[i].style.display = "";
+               } else {
+                 tr[i].style.display = "none";
+               }
+             }       
+           }
+         }
+      </script>
+      <br>
+      <br>
+      <br>
+      <hr>
+      <!--footer-->
+      <footer>
+         <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Partners</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Sources</button>
+         </div>
+         <div id="Paris" class="tabcontent">
+            <h3>Partners</h3>
+            <ul>
+               <li><a href="">The Mnk</a></li>
+               <li><a href="https://www.successacademies.org/">Success Academy Charter Schools</a></li>
+            </ul>
+         </div>
+         <div id="Tokyo" class="tabcontent">
+            <h3>Sources</h3>
+            <ul>
+               <li><a href="W3schools.com">W3schools</a></li>
+               <li><a href="github.com">Github</a></li>
+            </ul>
+         </div>
+         <script>
+            function openCity(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
             }
-
-            * {
-              box-sizing: border-box;
-            }
-
-
-            h2 {
-              padding-left: 8px;
-            }
-		
-		
-			     .topnav h3 {
-				  font-size:20px;
-			     }
-
-        
-
-        /* Style the navigation menu inside the left column */
-            p {
-                list-style-type: none;
-                padding: 0;
-                margin: 0;
-                text-align:center
-            }
-
-            li p {
-                padding: 12px;
-                text-decoration: none;
-                color: black;
-                display: block
-            }
-
-            li p:hover {
-                background-color: #eee;
-            }
-            
-            p{
-              background-color:;  
-            }
-            
-            <!--navigation-bar-->
-                        /* Style the top navigation bar */
-                        .topnav {
-                        overflow: hidden;
-                        background-color: #ffffff;
-                        }
-                        /* Style the topnav links */
-                        .topnav a {
-                        background-color: white;
-                        display: block;
-                        color: blue;
-                        text-align: center;
-                        padding: 14px 16px;
-                        text-decoration: none;
-                        float:right;
-                        }
-                        /* Change color on hover */
-                        .topnav a:hover {
-                        background-color: orange;
-                        }
-                       
-            /*search menu*/
-* {
-  box-sizing: border-box;
-}
-
-#myInput {
-  background-image: url('/css/searchicon.png');
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  width: 100%;
-  font-size: 16px;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
-  margin-bottom: 12px;
-}
-
-#myTable {
-  border-collapse: collapse;
-  width: 100%;
-  border: 1px solid #ddd;
-  font-size: 18px;
-}
-
-#myTable th, #myTable td {
-  text-align: left;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header, #myTable tr:hover {
-  background-color: #f1f1f1;
-}
-
-a {
-    text-decoration:none;
-    color:black;
-}
-/*footer*/
-            tabcontent a {
-	text-decoration:none;
-    color:black;
-    }
-body {font-family: Arial;}
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-  font-size: 17px;
-}
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-        </style>
-    </head>
-    <body>
-        <!--navbar-->
-            
-            <nav>
-<div class="topnav">
-                       <a href="resources.html">                
-                        <h3>
-                        | Resources |</h3>
-                     </a>
-                     <a href="https://success.overturemarket.com">
-                        <h3>
-                        | Store |</h3>
-                     </a>
-                     <a href="drills.html">
-                        <h3>| Drills |</h3>
-                     </a>
-                     <a href="team.html">
-                        <h3>| The Team |</h3>
-                     </a>
-                     <img src="https://tbncdn.freelogodesign.org/59ef53d6-0380-43c8-96e1-c8267fc11b32.png?1553306171711" height=200px width=200px>
-                     <a href="about.html">
-                        <h3>| About |</h3>
-                     </a>
-                     <a href="contact.html">
-                        <h3>| Contact |</h3>
-                     </a>
-                     <a href="schedule.html">
-                        <h3>| Schedule |</u></h3>
-                     </a>
-                     <a href="index.html">
-                        <h3>| Home |</h3>
-                     </a>
-                     
-                     </div>
-                     </nav>
-                     
-        <!-- search bar-->
-            
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-
-<table id="myTable">
-  <tr class="header">
-    <th style="width:15%;">Name</th>
-    <th style="width:15%">Division/grade</th>
-    <th style="width:70%;">About me</th>
-  </tr>
-<tr>
-    <td><a>Jesus Raul Cepin</a></td>
-    <td>Coach</td>
-    <td>I’m a Speech and Debate Coach who l</td>
-  </tr>
-  <tr>
-    <td><a>Sofiya Andreyeva</a></td>
-    <td>Coach</td>
-    <td></td>
-  </tr>
- <tr>
-    <td><a>Thelonius Lucien</a></td>
-    <td>8th grade</td>
-    <td>I am an animal lover who seeks to find his passion in zoology. And debate I will gain scholarships becoming key to my growth as a debator.</td>
-  </tr>
-  <tr>
-    <td><a>Rachel Bochman</a></td>
-    <td>8th grade</td>
-    <td>Not applicable</td>
-  </tr>
-  <tr>
-    <td><a>Jude Yang</a></td>
-    <td>5th grade</td>
-    <td>An alien that eats whales</td>
-    </tr>
-  <tr>
-<td><a>Nicholas Hayward</a></td>
-    <td>5th grade</td>
-    <td> I am the Lasagna Theif</td>
-  </tr>
-  <tr>
-    <td><a>Amelia Petry</a></td>
-    <td>7th grade</td>
-    <td>I am an Open Debater in 7th grade.</td>
-  </tr>
-  <tr>
-    <td><a>Kassandra Jazmin Sinchi</a></td>
-    <td>5th grade</td>
-    <td>I am a dog that likes to eat dog treats!!!</td>
-  </tr>
-  <tr>
-    <td><a>Indigo Felix</a></td>
-    <td>5th grade</td>
-    <td>IndigoPanda gaming, youtuber and debater I will debate on my deathbed</td>
-  </tr>
-  <tr>
-    <td><a>Jay Vazquez</a></td>
-    <td>6th grade</td>
-    <td>I AM JAY VAZQUEZ!!!!!!!!!!</td>
-  </tr>
-  <tr>
-    <td><a>Axel Pedersen of Baxel</a></td>
-    <td>6th grade</td>
-    <td>I am the most ageist one against 5th graders. Fused with Baran to become Baxel Pedowneysen makes a unstoppable force of annoyance</td>
-  </tr>
-  <tr>
-    <td><a>Tanaya Shah</a></td>
-    <td>5th grade</td>
-    <td>An optimistic, quick thinking girl/A talkative and optimistic person.</td>
-  </tr>
-  <tr>
-    <td><a>Yosairee Orozco</a></td>
-    <td>5th grade</td>
-    <td>I am a female kid who does policy debate</td>
-  </tr>
-  <tr>
-    <td><a>Athos Cespedes</a></td>
-    <td>5th grade</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a>Baran Downey of Baxel</a></td>
-    <td>6th grade</td>
-    <td></td>
-  </tr><tr>
-    <td><a>Marie Fall</a></td>
-    <td>8th grade</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a>Katherine "Katie" Hayward</a></td>
-    <td>8th grade</td>
-    <td></td>
-  </tr>
-<tr>
-    <td><a>Alexander "Lex" Lopez</a></td>
-    <td>8th grade</td>
-    <td></td>
-  </tr>
-<tr>
-    <td><a>Ean Kyle Tolbert</a></td>
-    <td>8th grade</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a>Henrik "Hank" Tully</a></td>
-    <td>5th grade</td>
-    <td></td>
-  </tr>
-<tr>
-    <td><a>Shiloh Williams</a></td>
-    <td>7th grade</td>
-    <td>I am shiloh Williams, a sixth grader at MW who debates as a super fun hobby.</td>
-  </tr>
-  <tr>
-    <td><a>Yewon Yang</a></td>
-    <td>8th grade</td>
-    <td></td>
-  </tr>
-</table>
-
-<script>
-function myFunction() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("myTable");
-  tr = table.getElementsByTagName("tr");
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[0];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }       
-  }
-}
-</script>
-	<br>
-	<br>
-	<br>
-	<hr>
-<!--footer-->
-    <footer>
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Contact</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Partners</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Sources</button>
-</div>
-
-<div id="London" class="tabcontent">
-  <h3>Contact</h3>
-  <div class="row">
-  <div class="column">
-    <h2>Sofiya Andreyeva</h2>
-    <p>Email: <a href="https://mail.google.com/mail/ca/u/0/?view=cm&fs=1&tf=1&source=mailto&to=Sofiya.Andreyeva@saschools.org">Sofiya.Andreyeva@saschools.org.com</a></p>
-    <p>Phone: </p>
-  </div>
-  <div class="column">
-    <h2>Jesus Raul Cepin</h2>
-    <p>Email: <a href="https://mail.google.com/mail/ca/u/0/?view=cm&fs=1&tf=1&source=mailto&to=Jesus.Cepin@saschools.org.com">Jesus.Cepin@saschools.com</a></p>
-    <p>Phone: </p>
-  </div>
-</div>
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Partners</h3>
-  <ul>
-  <li><a href="">The Mnk</a></li>
-  <li><a href="https://www.successacademies.org/">Success Academy Charter Schools</a></li>
-  </ul>
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Sources</h3>
-  <ul>
-  <li><a href="W3schools.com">W3schools</a></li>
-  <li><a href="github.com">Github</a></li>
-  </ul>
-</div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-   
-                            <p>Powered by <a href="">The Mnk</a></p>
-                            </footer>
-
-                    
-
-    </body>
+         </script>
+         <p>Powered by <a href="">The Mnk</a></p>
+      </footer>
+   </body>
 </html>
